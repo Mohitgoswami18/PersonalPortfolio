@@ -13,17 +13,18 @@ function App() {
     
     <div className='bg-[#0A0F1C] md:flex '>
       <div><Navbar></Navbar></div>
-      <div className='lg:ml-56'><HeroSection /></div>
+      <div className='lg:ml-56 lg:'><HeroSection /></div>
     </div>
 
     <div className='mt-50 md:mt-20 md:ml-50 md:px-20'>
       <div className=' h-screen'><Introduction></Introduction></div>
-      <div className='mt-100 md:mt-[-60px]'><Skills></Skills></div>
-      <div className='mt-25 md:mt-[-60px]'><Projects></Projects></div>
-      <div className='mt-10 md:mt-[-60px]'><Contact></Contact></div>
+      <div className='mt-30 md:mt-[-60px]'><Skills></Skills></div>
+      <div className='mt-15 md:mt-[-60px]'><Projects></Projects></div>
+      <div className=' md:mt-[-60px]'><Contact></Contact></div>
     </div>
 </div>
   )
 }
 
 export default App
+

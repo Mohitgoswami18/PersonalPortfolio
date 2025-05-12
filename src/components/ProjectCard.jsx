@@ -24,7 +24,7 @@ function ProjectCard({ name, image, description, link, tag, skillTag}) {
           className="w-full text-center h-40 object-cover rounded-md mb-4"
         />
       )}
-      <h4 className="text-white text-center text-lg hover:underline hover:scale-110 transition-all cursor-pointer group font-semibold mb-2"> <a href={`https://github.com/Mohitgoswami18/Basic-Frontend-Project/tree/main/${name}`}>{name}</a><i class="group-hover:scale-110 cursor-pointer transition-all text-blue-400 fa-solid fa-link"></i></h4>
+      <h4 className="text-white text-center text-lg hover:underline hover:scale-110 transition-all overflow-hidden cursor-pointer group font-semibold mb-2"> <a className='overflow-hidden' href={`https://github.com/Mohitgoswami18/Basic-Frontend-Project/tree/main/${name}`}>{name}</a><i class="group-hover:scale-110 cursor-pointer transition-all text-blue-400 fa-solid fa-link"></i></h4>
       <div className='flex flex-col h-35 justify-between'>
       <p className="text-gray-400 text-sm mb-4 max-w-[350px] break-words overflow-hidden">
   {description}
