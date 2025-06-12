@@ -15,16 +15,15 @@ function Introduction() {
   return (
     <motion.div 
       ref={ref}
-      initial={{ opacity: 0, scale: 0.8,x:20}}
-      animate={inView ? { opacity: 1, scale: 1, x:0 } : {}}
-      transition={{ duration: 1 }}
       className="flex p-2 w-[100%] md:p-6 h-screen gap-10 md:flex-row flex-col items-center font-[Poppins]"
     >
       {/* Profile Image */}
       <motion.div className="md:w-[300px] md:h-[300px] w-[200px] h-[200px]  shrink-0">
         <motion.img 
           whileHover={{scale:1.12}}
-          transition={{duration:0.2, ease:'easeIn'}}
+          initial={{ opacity: 0,x:-60}}
+          animate={inView ? { opacity: 1, x:0 } : {}}
+          transition={{ duration: 1 }}
           src={myImage}
           alt="Personal-image" 
           className="w-full h-full object-cover rounded-full p-2"
@@ -34,9 +33,9 @@ function Introduction() {
       <motion.div className="max-w-[750px]  px-2 md:px-16">
         <motion.p 
           className="text-lg text-white tracking-normal text-center"
-          initial={{ opacity: 0}} 
-          animate={inView ? { opacity: 1 } : {}} 
-          transition={{ duration: 1.5, delay: 0.5 }}
+          initial={{ opacity: 0,x:60}}
+          animate={inView ? { opacity: 1, x:0 } : {}}
+          transition={{ duration: 1 }}
         >
           <span className="font-bold text-2xl">Hi</span>, I’m 
           <motion.span 

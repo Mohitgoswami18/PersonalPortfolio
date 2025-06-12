@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
 import Introduction from './components/Introduction'
@@ -8,19 +8,60 @@ import Contact from './components/Contact'
 
 function App() {
 
+  const homeref = useRef();
+  const aboutref = useRef();
+  const skillref = useRef();
+  const projectref = useRef();
+  const contactref = useRef();
+
+  const [mousePosition, setMousePosition] = useState({
+    x:0,
+    y:0,
+  })
+
+  function mousestyle (e) {
+    setMousePosition({
+      x:e.clientX,
+      y:e.clientY
+    })
+  }
+
+  const  cursorStyle ={
+      position: 'fixed',
+      top: mousePosition.y,
+      left: mousePosition.x,
+      width: '80px',
+      height: '80px',
+      backgroundColor: '#60A5FA', 
+      borderRadius: '50%',
+      transform: 'translate(-50%, -50%)',
+      zIndex: 9999,
+      opacity: 1,
+      filter: 'blur(80px)',
+      pointerEvents: 'none',
+      transition: 'top 0.05s linear, left 0.05s linear',
+  }
+
+  const mouseStyle = useEffect (()=>{
+    window.addEventListener('mousemove', (e)=>mousestyle(e)); 
+
+    return window.removeEventListener('mousemove', (e)=>mousestyle(e));
+  }, [])
+
   return (
     <div className='bg-[#0A0F1C]'>
+      <div style={cursorStyle}></div>
     
     <div className='bg-[#0A0F1C] md:flex '>
-      <div><Navbar></Navbar></div>
-      <div className='lg:ml-56 lg:'><HeroSection /></div>
+      <div><Navbar homeref = {homeref} aboutref = {aboutref} skillref = {skillref} projectref = {projectref} contactref = {contactref}></Navbar></div>
+      <div ref={homeref} id='homeref' className='lg:ml-56 lg:'><HeroSection /></div>
     </div>
 
     <div className='mt-50 md:mt-20 md:ml-50 md:px-20'>
-      <div className=' h-screen'><Introduction></Introduction></div>
-      <div className='mt-30 md:mt-[-60px]'><Skills></Skills></div>
-      <div className='mt-15 md:mt-[-60px]'><Projects></Projects></div>
-      <div className=' md:mt-[-60px]'><Contact></Contact></div>
+      <div ref={aboutref} id='aboutref' className=' h-screen'><Introduction></Introduction></div>
+      <div ref={skillref} id='skillref' className='mt-30 md:mt-[-60px]'><Skills></Skills></div>
+      <div ref={projectref} id='projectref' className='mt-15 md:mt-[-60px]'><Projects></Projects></div>
+      <div ref={contactref} id='contactref' className=' md:mt-[-60px]'><Contact></Contact></div>
     </div>
 </div>
   )
