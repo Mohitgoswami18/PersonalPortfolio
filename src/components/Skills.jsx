@@ -22,7 +22,7 @@ function Skills() {
     })
 
     return (
-        <motion.div ref={ref} className='font-[Poppins] mt-10 lg:mt-50 p-6 pt-10'
+        <motion.div ref={ref} className='font-[Poppins] mt-10 lg:mt-50  p-6 pt-10'
         >
             <motion.h1
              className='font-bold text-4xl lg:ml-[-90px] text-center lg:text-5xl text-blue-500'>Tech Stack</motion.h1>
@@ -37,7 +37,7 @@ function Skills() {
                         <SkillCard image={react} title="React" />
                         <SkillCard image={nodejs} title="Nodejs" />
                         <SkillCard image={git} title="git" />
-                        <SkillCard image={github} title="GitHub" />
+                        <SkillCard image={github} title="GitHub" imageStyle = "w-20" />
                         <SkillCard image={vite} title="ReaVitect" />
                         <SkillCard image={vercel} title="Vercel" />
                         <SkillCard image={python} title="python" />

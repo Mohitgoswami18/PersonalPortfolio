@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRef } from 'react'
 
-function Navbar( { aboutref, skillref, projectref, homeref, contactref} ) {
+function Navbar( { aboutref, skillref, projectref, homeref, contactref, achivementref} ) {
   const VerticalScroll = (ref) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
   }
@@ -17,6 +17,8 @@ function Navbar( { aboutref, skillref, projectref, homeref, contactref} ) {
           <div className='md:inline hidden w-7 h-[0.7px] group-hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] group-hover:w-18 transition-all bg-[#C9D1D9] hover-bg-white'></div> About me</li>
         <li className='group hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] flex items-center gap-2 cursor-pointer hover:text-white transition-colors'
         onClick={ () => VerticalScroll (skillref)}><div className='md:inline hidden w-7 h-[0.7px] group-hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] group-hover:w-18 transition-all bg-[#C9D1D9] hover-bg-white'></div> skills </li>
+        <li className='group hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] flex items-center gap-2 cursor-pointer hover:text-white transition-colors'
+        onClick={ () => VerticalScroll (achivementref)}><div className='md:inline hidden w-7 h-[0.7px] group-hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] group-hover:w-18 transition-all bg-[#C9D1D9] hover-bg-white'></div> Achivements </li>
         <li className='group hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] flex items-center gap-2 cursor-pointer hover:text-white transition-colors'
         onClick={ () => VerticalScroll (projectref)}><div className='md:inline hidden w-7 h-[0.7px] group-hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] group-hover:w-18 transition-all bg-[#C9D1D9] hover-bg-white'></div> projects </li>
         <li className='group hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] flex items-center gap-2 cursor-pointer hover:text-white transition-colors'
