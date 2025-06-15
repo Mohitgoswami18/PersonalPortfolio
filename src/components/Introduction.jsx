@@ -21,7 +21,7 @@ function Introduction() {
       <motion.div className="md:w-[300px] md:h-[300px] w-[200px] h-[200px]  shrink-0">
         <motion.img 
           whileHover={{scale:1.12}}
-          initial={{ opacity: 0,x:-60}}
+          initial={{ opacity: 0,x:-20}}
           animate={inView ? { opacity: 1, x:0 } : {}}
           transition={{ duration: 1 }}
           src={myImage}
@@ -33,7 +33,7 @@ function Introduction() {
       <motion.div className="max-w-[750px]  px-2 md:px-16">
         <motion.p 
           className="text-lg text-white tracking-normal text-center"
-          initial={{ opacity: 0,x:60}}
+          initial={{ opacity: 0,x:20}}
           animate={inView ? { opacity: 1, x:0 } : {}}
           transition={{ duration: 1 }}
         >
