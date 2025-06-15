@@ -16,10 +16,10 @@ function Achivements() {
     <div ref={ref}>
       
 
-      <div className='border-l-4  px-4 border-[#10172c]'>
+      <div className='border-l-4 max-w-[800px] px-4 border-[#10172c]'>
 
         {/* achivement 1 */}
-        <div className="flex items-center mt-22">
+        <div className="flex flex-col md:flex-row items-center mt-22">
             <motion.img src={tcs} alt="tcs mail" class="rounded-md w-58 m-4 h-38"
             initial={{opacity:0, x:-40}}
             animate={ inView ? {opacity:1, x:0} : {}}
@@ -35,7 +35,11 @@ function Achivements() {
 
 
         {/* achivement 2 */}
-        <div className="flex items-center">
+        <div className="flex flex-col md:flex-row md:flex-row-reverse items-center">
+          <motion.img src={gfgbag} alt="GFG Bag" class="rounded-full w-32 m-4"
+          initial={{opacity:0, x:-40}}
+          animate={ inView ? {opacity:1, x:0} : {}}
+          transition={{duration:1,}}/>
         <motion.div class=" my-2 px-8 py-2 mt-4 rounded-lg shadow-lg bg-[#0b1225] text-white w-fit"
         initial={{opacity:0, x:40}}
             animate={ inView ? {opacity:1, x:0} : {}}
@@ -43,14 +47,10 @@ function Achivements() {
             <h3 class="text-lg font-semibold">GFG 160-Day Challenge Bag (2025)</h3>
             <p className="text-[#8B949E] mt-4">Awarded for completing the 160-Day of problem solving Challenge on GeeksforGeeks.</p>
         </motion.div>
-            <motion.img src={gfgbag} alt="GFG Bag" class="rounded-full w-32 m-4"
-            initial={{opacity:0, x:-40}}
-            animate={ inView ? {opacity:1, x:0} : {}}
-            transition={{duration:1,}}/>
         </div>
 
         {/* achivement 3 */}
-        <div className="flex items-center">
+        <div className="flex flex-col md:flex-row  items-center">
             <motion.img src={hackathonlogo} alt="dev Gathering logo" class="rounded-full w-32 h-22 m-4"
             initial={{opacity:0, x:40}}
             animate={ inView ? {opacity:1, x:0} : {}}
