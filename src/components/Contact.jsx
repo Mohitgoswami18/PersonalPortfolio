@@ -58,6 +58,7 @@ function Contact() {
         </a>
         <a
           href="https://www.instagram.com/_mohit_goswami_"
+          target='blank'
           className="text-white hover:text-blue-500 transition underline"
         >
           Instagram
