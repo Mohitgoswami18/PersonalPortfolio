@@ -15,7 +15,7 @@ function Introduction() {
   return (
     <motion.div 
       ref={ref}
-      className="flex p-2 w-[100%] md:p-6 h-screen gap-10 md:flex-row flex-col items-center font-[Poppins]"
+      className="flex p-2 w-[100%] md:p-6 gap-10 md:flex-row flex-col items-center font-[Poppins]"
     >
       {/* Profile Image */}
       <motion.div className="md:w-[300px] md:h-[300px] w-[200px] h-[200px]  shrink-0">

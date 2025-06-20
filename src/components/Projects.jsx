@@ -80,7 +80,7 @@ const ProjectSection = () => {
 
   return (
     <div ref={ref} div className='font-[Poppins] md:ml-10 px-4'>
-      <div className='p-6 mt-60  font-[Poppins] w-full'>
+      <div className='p-6 mt-20 lg:mt-60  font-[Poppins] w-full'>
         <motion.h1
         initial={{opacity:0, scale:0.99,y:-10}}
         animate={inView ? {opacity:1, scale:1, x:0, y:0} : {}}

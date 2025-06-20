@@ -62,7 +62,7 @@ function App() {
     </div>
 
     <div className='mt-50 lg:mt-20 md:ml-50 md:px-20'>
-      <div ref={aboutref} id='aboutref' className=' h-screen'><Introduction></Introduction></div>
+      <div ref={aboutref} id='aboutref' className=''><Introduction></Introduction></div>
       <div ref={skillref} id='skillref' className='mt-30 md:mt-[-60px]'><Skills></Skills></div>
       <div ref={achivementref} id='achivementref' className='mt-30 md:mt-[-60px]'><Achievements /></div>
       <div ref={projectref} id='projectref' className='mt-15 md:mt-[-60px]'><Projects></Projects></div>
