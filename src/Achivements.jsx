@@ -29,7 +29,7 @@ function Achivements() {
             animate={ inView ? {opacity:1, x:0} : {}}
             transition={{duration:1,}}>
             <h3 class="text-lg font-semibold">TCS CodeVita Season 12 — Cleared Round 1</h3>
-            <p className="text-[#8B949E] mt-4">Cleared Round 1 of TCS CodeVita Season 12, competing against participants from all over the world. (GFG-160)</p>
+            <p className="text-[#8B949E] mt-4">Cleared Round 1 of TCS CodeVita Season 12, competing against participants from all over the world.</p>
         </motion.div>
         </div>
 
@@ -45,7 +45,7 @@ function Achivements() {
             animate={ inView ? {opacity:1, x:0} : {}}
             transition={{duration:1,}}>
             <h3 class="text-lg font-semibold">GFG 160-Day Challenge Bag (2025)</h3>
-            <p className="text-[#8B949E] mt-4">Awarded for completing the 160-Day of problem solving Challenge on GeeksforGeeks.</p>
+            <p className="text-[#8B949E] mt-4">Awarded for completing the 160-Day of problem solving Challenge on GeeksforGeeks ( GFG-160 ).</p>
         </motion.div>
         </div>
 
