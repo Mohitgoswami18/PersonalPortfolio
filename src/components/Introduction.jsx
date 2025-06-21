@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react'
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import myImage from '../assets/nature.jpg';
+import myImage from '../assets/icons/pfp.jpg';
 
 function Introduction() {
   const { ref, inView } = useInView({
@@ -15,15 +15,15 @@ function Introduction() {
   return (
     <motion.div 
       ref={ref}
-      className="flex p-2 w-[100%] md:p-6 gap-10 md:flex-row flex-col items-center font-[Poppins]"
+      className="flex p-2 w-[100%] md:p-6 gap-10 lg:mt-40 md:flex-row flex-col items-center font-[Poppins]"
     >
       {/* Profile Image */}
       <motion.div className="md:w-[300px] md:h-[300px] w-[200px] h-[200px]  shrink-0">
         <motion.img 
-          whileHover={{scale:1.12}}
+          whileHover={{scale:1.12, boxShadow:'0px -2px 10px white'}}
           initial={{ opacity: 0,x:-20}}
           animate={inView ? { opacity: 1, x:0 } : {}}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.8 }}
           src={myImage}
           alt="Personal-image" 
           className="w-full h-full object-cover rounded-full p-2"
