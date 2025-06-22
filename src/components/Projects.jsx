@@ -19,20 +19,23 @@ const projects = {
       description: 'A basic authentication system that allows users to register and log in using browser local storage.',
       image: auth,
       tag: 'practise',
-      skillTag : ['HTML', "TailwindCss", "Java Script"],
+      link: 'https://basic-authentication-two.vercel.app',
+      skillTag : ['HTML', "TailwindCss", "JS"],
     },
     {
       name: 'ColorGuessingGame',
       description: 'A fun browser-based game that tests your color recognition skills. with simple DOM manipulation and internal scoring logic.',
       image: cgg,
       tag: 'practise',
-      skillTag : ['HTML', "CSS", "Java Script"],
+      link: 'https://basic-frontend-project-mohit-goswamis-projects.vercel.app',
+      skillTag : ['HTML', "CSS", "JS"],
     },
     {
       name: 'backgroundChangerProject',
       description: ' small React project demonstrating the use of hooks to dynamically change background colors with user interactions.',
       image: rbc,
       tag: 'practise',
+      link: 'https://basic-frontend-project-1c83.vercel.app',
       skillTag : ['React', "TailwindCss"],
     },
   ],
@@ -42,6 +45,7 @@ const projects = {
       description: 'A responsive UI clone of the Blinkit website showcasing frontend layout and design skills using HTML and CSS.',
       image: blinkitUI,
       tag: 'Basic',
+      link: 'https://basic-frontend-project-pot3.vercel.app',
       skillTag : ['HTML', "CSS"],
     },
     {
@@ -49,6 +53,7 @@ const projects = {
       description: 'A responsive UI clone of the Netflix website showcasing frontend layout and design skills using HTML and TAILWIND CSS.',
       image: netflixUI,
       tag: 'Basic',
+      link: 'https://basic-frontend-project-ia5d.vercel.app',
       skillTag : ['HTML', "TailwindCss"],
     },
     {
@@ -56,7 +61,8 @@ const projects = {
       description: 'A simple weather web application that displays current weather data like temperature, humidity... using the OpenWeather API.',
       image: weather,
       tag: 'Basic',
-      skillTag : ['HTML', "CSS", "Java Script"],
+      link: 'https://basic-frontend-project-ya7w.vercel.app/',
+      skillTag : ['HTML', "CSS", "JS"],
     },
     
   ],
@@ -80,7 +86,7 @@ const ProjectSection = () => {
 
   return (
     <div ref={ref} div className='font-[Poppins] md:ml-10 px-4'>
-      <div className='p-6 mt-20 lg:mt-60  font-[Poppins] w-full'>
+      <div className=' mt-20 lg:mt-60  font-[Poppins] w-full'>
         <motion.h1
         initial={{opacity:0, scale:0.99,y:-10}}
         animate={inView ? {opacity:1, scale:1, x:0, y:0} : {}}
@@ -88,7 +94,7 @@ const ProjectSection = () => {
         className='lg:ml-[-110px] lg:pb-4 text-center font-bold text-5xl text-blue-500'>Projects</motion.h1>
         
       </div>
-      <div className="text-white p-6 mt-2 mx-auto ml-2">
+      <div className="text-white mt-2 mx-auto ml-2">
         <div className="flex gap-4 items-center lg:mr-30 justify-center mb-6">
         <motion.button
 

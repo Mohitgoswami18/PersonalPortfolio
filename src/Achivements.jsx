@@ -2,6 +2,7 @@ import React from 'react'
 import gfgbag from './assets/icons/gfgbag.png'
 import hackathonlogo from './assets/icons/hackathonlogo.png'
 import tcs from './assets/icons/tcs.png'
+import badges from './assets/icons/badges.png'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
 
@@ -35,7 +36,7 @@ function Achivements() {
 
 
         {/* achivement 2 */}
-        <div className="flex flex-col md:flex-row md:flex-row-reverse items-center">
+        <div className="flex flex-col md:flex-row-reverse items-center">
           <motion.img src={gfgbag} alt="GFG Bag" class="rounded-full w-32 m-4"
           initial={{opacity:0, x:-40}}
           animate={ inView ? {opacity:1, x:0} : {}}
@@ -63,6 +64,22 @@ function Achivements() {
                 <h3 class="text-lg font-semibold">Hackathon Participant — [Dev Gathering 2k25] (2025)</h3>
                 <p className="text-[#8B949E] mt-4">Selected to compete, gaining valuable experience in coding under pressure and collaboration..</p>
             </motion.div>
+        </div>
+
+        
+        {/* achivement 4 */}
+        <div className="flex flex-col md:flex-row-reverse items-center">
+          <motion.img src={badges} alt="GFG Bag" class="rounded-full w-74 "
+          initial={{opacity:0, x:-40}}
+          animate={ inView ? {opacity:1, x:0} : {}}
+          transition={{duration:1,}}/>
+        <motion.div class=" my-2 px-8 py-2 mt-4 rounded-lg shadow-lg bg-[#0b1225] text-white w-fit"
+        initial={{opacity:0, x:40}}
+            animate={ inView ? {opacity:1, x:0} : {}}
+            transition={{duration:1,}}>
+            <h3 class="text-lg font-semibold">LeetCode Problem Solving Streaks</h3>
+            <p className="text-[#8B949E] mt-4">Achieved 50-Day and 100-Day Problem Solving Streak Badges on LeetCode by consistently solving daily coding challenges.</p>
+        </motion.div>
         </div>
       </div>
     </div>

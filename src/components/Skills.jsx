@@ -37,9 +37,9 @@ function Skills() {
                         <SkillCard image={react} title="React" />
                         <SkillCard image={nodejs} title="Nodejs" />
                         <SkillCard image={git} title="git" />
-                        <SkillCard image={github} title="GitHub" imageStyle = "w-20" />
+                        <SkillCard image={github} title="GitHub" imageStyle = "w-20 invert" />
                         <SkillCard image={vite} title="ReaVitect" />
-                        <SkillCard image={vercel} title="Vercel" />
+                        <SkillCard image={vercel} title="Vercel" imageStyle= "w-19 invert" />
                         <SkillCard image={python} title="python" />
             </motion.div>
         </motion.div>

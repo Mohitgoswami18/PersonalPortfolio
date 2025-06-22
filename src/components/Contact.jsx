@@ -13,7 +13,7 @@ function Contact() {
     <section
     ref={ref}
       id="contact"
-      className="mt-60 pb-[300px] lg:ml-18 max-w-[800px] text-white py-16 flex flex-col items-center font-[Poppins]"
+      className="mt-60 pb-12 lg:ml-18 max-w-[800px] text-white pt-16 flex flex-col items-center font-[Poppins]"
     >
       <motion.h2 className="text-4xl text-blue-500 font-bold mb-4"
       initial={{y:-20, opacity:0}}
@@ -64,6 +64,8 @@ function Contact() {
           Instagram
         </a>
       </motion.div>
+      <h1 className='text-[#1b243d] text-[15px] pt-32'>Made with React And Tailwind css</h1>
+      <h1 className='text-[#1b243d] text-[15px]'>Created By - Mohit Goswami</h1>
     </section>
   );
 }

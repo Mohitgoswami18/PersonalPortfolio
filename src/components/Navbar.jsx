@@ -24,6 +24,7 @@ function Navbar( { aboutref, skillref, projectref, homeref, contactref, achiveme
         <li className='group hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] flex items-center gap-2 cursor-pointer hover:text-white transition-colors'
         onClick={ () => VerticalScroll (contactref)}><div className='md:inline hidden w-7 h-[0.7px] group-hover:drop-shadow-[0_0_25px_rgba(255,255,255,0.9)] group-hover:w-18 transition-all bg-[#C9D1D9] hover-bg-white'></div> contact  </li>
       </ul>
+      
     </div>
   )
 }

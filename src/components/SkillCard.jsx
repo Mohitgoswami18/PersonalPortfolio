@@ -16,7 +16,7 @@ function SkillCard( { image, title, imageStyle} ) {
        transition={{duration:1, ease:easeIn}}
        className='group hover:scale-140  transition-transform flex flex-col items-center '>
        {
-            imageStyle? <img src={image} alt="" className={`p-2 hover:drop-shadow-[0px_0px_12px_rgba(59,130,246,0.5)] ${imageStyle} transition-all`}/>
+            imageStyle? <img src={image} alt="" className={`p-2  hover:drop-shadow-[0px_0px_12px_rgba(59,130,246,0.5)] ${imageStyle} transition-all`}/>
             : <img src={image} alt="" className='p-2 hover:drop-shadow-[0px_0px_12px_rgba(59,130,246,0.5)] w-20 transition-all '/>
         }
 
