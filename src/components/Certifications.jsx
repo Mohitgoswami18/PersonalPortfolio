@@ -16,7 +16,7 @@ function Certifications() {
   return (
     <div className='py-12' ref={ref}>
       <div className="mt-12">
-        <h3 className="text-2xl font-semibold mb-2 text-blue-500">Certifications</h3>
+        <h3 className="font-bold text-5xl mb-2 text-center text-blue-500">Certifications</h3>
         <div className="mt-12 flex">
           <div className='w-1/2 flex flex-col gap-2'>
             <motion.img src={gfgcertificate} alt="GFG Certificate" 

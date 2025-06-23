@@ -25,9 +25,9 @@ function Skills() {
         <motion.div ref={ref} className='font-[Poppins] mt-10 lg:mt-50  p-6 pt-10'
         >
             <motion.h1
-             className='font-bold text-4xl lg:ml-[-90px] text-center lg:text-5xl text-blue-500'>Tech Stack</motion.h1>
+             className='font-bold text-4xl  lg:ml-[-90px] text-center lg:text-5xl text-blue-500'>Tech Stack / Tools</motion.h1>
             <motion.div
-             className='flex mt-10 flex-wrap'>
+             className='flex mt-10 flex-wrap justify-center items-center'>
                         <SkillCard image={cpp} title="C++" />
                         <SkillCard image={python} title="python" />
                         <SkillCard image={html} title="HTML" imageStyle = "w-19 p-4"/>
