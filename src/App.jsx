@@ -53,23 +53,48 @@ function App() {
   }, [])
 
   return (
-    <div className='bg-[#0A0F1C]'>
+    <div className="bg-[#0A0F1C]">
       <div style={cursorStyle}></div>
-    
-    <div className='bg-[#0A0F1C] md:flex '>
-      <div><Navbar homeref = {homeref} aboutref = {aboutref} skillref = {skillref} projectref = {projectref}  contactref = {contactref} achivementref = {achivementref}></Navbar></div>
-      <div ref={homeref} id='homeref' className='lg:ml-56 lg:'><HeroSection /></div>
-    </div>
 
-    <div className='mt-20 md:mt-80 lg:mt-20 md:ml-50 md:px-20'>
-      <div ref={aboutref} id='aboutref' className=''><Introduction></Introduction></div>
-      <div ref={skillref} id='skillref' className='mt-30 md:mt-[-60px]'><Skills></Skills></div>
-      <div ref={achivementref} id='achivementref' className='mt-30 md:mt-[-60px]'><Achievements /></div>
-      <div ref={projectref} id='projectref' className='mt-15 md:mt-[-60px]'><Projects></Projects></div>
-      <div ref={contactref} id='contactref' className=' md:mt-[-60px]'><Contact></Contact></div>
+      <div className="bg-[#0A0F1C] md:flex ">
+        <div>
+          <Navbar
+            homeref={homeref}
+            aboutref={aboutref}
+            skillref={skillref}
+            projectref={projectref}
+            contactref={contactref}
+            achivementref={achivementref}
+          ></Navbar>
+        </div>
+        <div ref={homeref} id="homeref" className="lg:ml-56 lg:">
+          <HeroSection contactref={contactref} />
+        </div>
+      </div>
+
+      <div className="mt-20 md:mt-80 lg:mt-20 md:ml-50 md:px-20">
+        <div ref={aboutref} id="aboutref" className="">
+          <Introduction></Introduction>
+        </div>
+        <div ref={skillref} id="skillref" className="mt-30 md:mt-[-60px]">
+          <Skills></Skills>
+        </div>
+        <div
+          ref={achivementref}
+          id="achivementref"
+          className="mt-30 md:mt-[-60px]"
+        >
+          <Achievements />
+        </div>
+        <div ref={projectref} id="projectref" className="mt-15 md:mt-[-60px]">
+          <Projects></Projects>
+        </div>
+        <div ref={contactref} id="contactref" className=" md:mt-[-60px]">
+          <Contact></Contact>
+        </div>
+      </div>
     </div>
-</div>
-  )
+  );
 }
 
 export default App

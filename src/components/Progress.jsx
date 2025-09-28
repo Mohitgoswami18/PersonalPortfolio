@@ -42,7 +42,6 @@ function Progress() {
             </div>
           </motion.div>
 
-          {/* development section */}
           <motion.div
           initial={{opacity:0, y:-50}}
           animate={ inView ? {opacity:1, y:0} : {}}
@@ -55,11 +54,7 @@ function Progress() {
         </div>
 
       </div>
-
-      {/* progress component */}
       <Achivements />
-
-      {/* Certificates Section */}
       <Certifications />
       
     </section>

@@ -1,9 +1,9 @@
 function QuestionMeter() {
 
     const questionData = [
-  { label: "Easy", count: 103, color: "#00ff9b", total: 880 },
-  { label: "Medium", count: 154, color: "#ffcc5b", total: 1858 },
-  { label: "Hard", count: 29, color: "#ff5b5b", total: 842 }
+  { label: "Easy", count: 116, color: "#00ff9b", total: 904 },
+  { label: "Medium", count: 187, color: "#ffcc5b", total: 1923 },
+  { label: "Hard", count: 32, color: "#ff5b5b", total: 873 }
 ];
 
   return (
